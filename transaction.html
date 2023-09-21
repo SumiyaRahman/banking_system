@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Transaction Page</title>
+  </head>
+  <body>
+    <header class="bg-red-600 py-3 text-center">
+      <h1 class="text-2xl text-white font-thin">
+        Welcome to <span class="text-3xl font-semibold"><q>Bank Asia</q></span>
+      </h1>
+    </header>
+    <section class="flex justify-center mt-10">
+      <div class="w-11/12 lg:w-8/12">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7">
+          <div class="bg-red-500 py-10 rounded pl-6">
+            <p class="text-white font-medium text-2xl">Deposit</p>
+            <p class="text-white text-4xl mt-2">
+              $<span id="deposite-amount-value">00</span>
+            </p>
+          </div>
+          <div class="bg-[#1C1C1C] py-10 rounded pl-6">
+            <p class="text-white font-medium text-2xl">Withdraw</p>
+            <p class="text-white text-4xl mt-2">
+              $<span id="withdraw-value">00</span>
+            </p>
+          </div>
+          <div class="bg-red-600 py-10 rounded pl-6">
+            <p class="text-white font-medium text-2xl">Balance</p>
+            <p class="text-white text-4xl mt-2">
+              $<span id="balance-amount">10000</span>
+            </p>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-5">
+            <div class="bg-[#1C1C1C] py-10 rounded px-8">
+              <p class="text-white font-medium text-2xl">Deposit</p>
+              <div class="py-4">
+                <input
+                  id="deposit-field"
+                  placeholder="Amount You Want to Deposit"
+                  class="w-full rounded pl-3 py-2 placeholder:text-sm"
+                />
+              </div>
+              <button
+                id="deposit-btn"
+                class="bg-red-600 text-white px-10 py-2 tracking-wide rounded font-light text-[15px"
+              >
+                Deposit
+              </button>
+            </div>
+            <div class="bg-slate-200 py-10 rounded px-8">
+              <p class="text-[#1C1C1C] font-medium text-2xl">Withdraw</p>
+              <div class="py-4">
+                <input
+                  id="withdraw-field"
+                  placeholder="Amount You Want to Withdraw"
+                  class="w-full rounded pl-3 py-2 placeholder:text-sm"
+                />
+              </div>
+              <button
+                id="withdraw-btn"
+                class="bg-red-600 text-white px-10 py-2 tracking-wide rounded font-light text-[15px"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./deposite.js"></script>
+    <script src="./withdraw.js"></script>
+    <script src="./publicUtilities.js"></script>
+  </body>
+</html>
